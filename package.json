@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.tsx --watch",
+    "build": "bun run src/index.tsx"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.3.0",
+    "@mdx-js/rollup": "^2.3.0",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
