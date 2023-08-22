@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  @page {
+    margin: 1rem 0;
+
+  }
+
+  @page :first {
+    margin: 0 0 1rem 0;
+  }
+
+  #page-numbers {
+    @apply text-xs !font-sans;
+text-align: right;width: 297mm;font-size: 8px;
+  }
+
+  header {
+    @apply text-slate-50 bg-sky-900 p-8 flex flex-row place-content-between space-x-4;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 70% 100%, 0 90%);
+  }
+
+  header h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  header h2 {
+    @apply text-xl;
+  }
+
+  #info {
+    @apply flex flex-col flex-wrap w-[250px];
+    flex-shrink: 0;
+  }
+
+  #info dt {
+    @apply text-xs font-bold text-slate-200;
+  }
+  
+  #info dd {
+    @apply text-xs
+  }
+
+  #info dt + dd {
+    @apply mb-2
+  }
+
+  #summary {
+    @apply text-xs mt-4 max-w-lg space-y-4;
+  }
+
+  main {
+    @apply flex px-8 py-0 space-x-8;
+  }
+
+  aside {
+    @apply space-y-4 mt-4;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  main h2 {
+    @apply text-xl font-bold text-sky-900;
+  }
+
+  aside h3 {
+    @apply text-lg font-bold text-sky-900;
+  }
+
+  aside h4 {
+    @apply text-sm text-sky-900;
+  }
+
+  aside ul {
+    @apply grid gap-1;
+
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  aside li {
+    @apply text-xs;
+  }
+
+  #open-source div + div {
+    @apply mt-2
+  }
+
+  #work {
+    @apply space-y-2;
+  }
+
+  #work h3 {
+    @apply text-lg font-bold text-slate-800 -mt-2;
+  }
+
+  #work h4, .degree {
+    @apply text-sm font-semibold text-slate-700;
+  }
+
+  .date {
+    @apply text-sm italic;
+  }
+
+  .job {
+    @apply pt-2;
+    break-inside: avoid;
+  }
+
+  .job li, .schoolName {
+    @apply mt-2 text-xs ;
+  }
+
+  .job ul {
+    @apply pl-4 list-disc space-y-1;
+  }
+
+  #resume-link {
+    @apply text-xs space-y-2;
+  }
+}
