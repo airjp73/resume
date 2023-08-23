@@ -15,12 +15,14 @@
 
   #page-numbers {
     @apply text-xs !font-sans;
-text-align: right;width: 297mm;font-size: 8px;
+    text-align: right;
+    width: 297mm;
+    font-size: 8px;
   }
 
   header {
     @apply text-slate-50 bg-sky-900 p-8 flex flex-row place-content-between space-x-4;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 70% 100%, 0 90%);
+    clip-path: url(#headerCurve);
   }
 
   header h1 {
@@ -57,7 +59,7 @@ text-align: right;width: 297mm;font-size: 8px;
   }
 
   aside {
-    @apply space-y-4 mt-4;
+    @apply space-y-4 -mt-3;
     width: 250px;
     flex-shrink: 0;
   }
@@ -89,7 +91,7 @@ text-align: right;width: 297mm;font-size: 8px;
   }
 
   #work {
-    @apply space-y-2;
+    @apply space-y-2 -mt-32;
   }
 
   #work h3 {
