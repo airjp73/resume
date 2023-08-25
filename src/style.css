@@ -73,7 +73,7 @@
   }
 
   aside h4 {
-    @apply text-sm text-sky-900;
+    @apply text-sm font-semibold text-sky-900;
   }
 
   aside ul {
@@ -98,12 +98,12 @@
     @apply text-lg font-bold text-slate-800 -mt-2;
   }
 
-  #work h4, .degree {
-    @apply text-sm font-semibold text-slate-700;
+  #work h4 {
+    @apply text-sm font-semibold text-slate-800;
   }
 
   .date {
-    @apply text-sm italic;
+    @apply text-xs font-normal text-slate-600 ml-2;
   }
 
   .job {
