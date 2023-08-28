@@ -4,6 +4,12 @@
 
 @layer components {
 
+  * {
+    /* For some reason, this is required or else copy-pasting the text in the pdf will
+    result in the text being reversed */
+    font-family: sans-serif !important;
+  }
+
   @page {
     margin: 1rem 0;
 
