@@ -7,7 +7,7 @@
   * {
     /* For some reason, this is required or else copy-pasting the text in the pdf will
     result in the text being reversed */
-    font-family: sans-serif !important;
+    /* font-family: sans-serif !important; */
   }
 
   @page {
@@ -27,8 +27,9 @@
   }
 
   header {
-    @apply text-slate-50 bg-sky-900 p-8 flex flex-row place-content-between space-x-4;
-    clip-path: url(#headerCurve);
+    /* @apply text-slate-50 bg-sky-900 p-8 space-y-2 text-xs; */
+    @apply p-8 mb-4 border-b-2 border-sky-200 bg-gradient-to-br from-sky-50 via-sky-100 to-sky-200;
+    /* clip-path: url(#headerCurve); */
   }
 
   header h1 {
@@ -40,20 +41,8 @@
   }
 
   #info {
-    @apply flex flex-col flex-wrap w-[250px];
+    @apply flex flex-col flex-wrap mt-4 space-y-2;
     flex-shrink: 0;
-  }
-
-  #info dt {
-    @apply text-xs font-bold text-slate-200;
-  }
-  
-  #info dd {
-    @apply text-xs
-  }
-
-  #info dt + dd {
-    @apply mb-2
   }
 
   #summary {
@@ -65,7 +54,7 @@
   }
 
   aside {
-    @apply space-y-4 -mt-3;
+    @apply space-y-4;
     width: 250px;
     flex-shrink: 0;
   }
@@ -97,7 +86,7 @@
   }
 
   #work {
-    @apply space-y-2 -mt-32;
+    @apply space-y-2;
   }
 
   #work h3 {
