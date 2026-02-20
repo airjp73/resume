@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   * {
     /* For some reason, this is required or else copy-pasting the text in the pdf will
     result in the text being reversed */
@@ -12,7 +11,6 @@
 
   @page {
     margin: 1rem 0;
-
   }
 
   @page :first {
@@ -36,7 +34,11 @@
   }
 
   header h2 {
-    @apply text-xl;
+    @apply text-base text-sky-200/80;
+  }
+
+  header h2 strong {
+    @apply text-sky-200;
   }
 
   #info {
@@ -45,15 +47,15 @@
   }
 
   #info dt {
-    @apply text-xs font-bold text-slate-200;
+    @apply text-xs font-bold text-sky-200/80;
   }
-  
+
   #info dd {
-    @apply text-xs
+    @apply text-xs;
   }
 
   #info dt + dd {
-    @apply mb-2
+    @apply mb-2;
   }
 
   #summary {
@@ -71,7 +73,11 @@
   }
 
   main h2 {
-    @apply text-xl font-bold text-sky-900;
+    @apply text-xl font-bold text-sky-800;
+  }
+
+  main h3 {
+    @apply text-lg font-bold;
   }
 
   aside h3 {
@@ -79,7 +85,7 @@
   }
 
   aside h4 {
-    @apply text-sm font-semibold text-sky-900;
+    @apply text-sm font-semibold text-slate-900/90;
   }
 
   aside ul {
@@ -93,7 +99,7 @@
   }
 
   #open-source div + div {
-    @apply mt-2
+    @apply mt-2;
   }
 
   #work {
@@ -101,11 +107,11 @@
   }
 
   #work h3 {
-    @apply text-lg font-bold text-slate-800 -mt-2;
+    @apply text-lg font-bold text-sky-800 -mt-2;
   }
 
   #work h4 {
-    @apply text-sm font-semibold text-slate-800;
+    @apply text-sm font-semibold text-slate-900;
   }
 
   .date {
@@ -117,8 +123,9 @@
     break-inside: avoid;
   }
 
-  .job li, .schoolName {
-    @apply mt-2 text-xs ;
+  .job li,
+  .schoolName {
+    @apply mt-2 text-xs;
   }
 
   .job ul {
