@@ -1,22 +1,54 @@
+<link href="./style.css" rel="stylesheet" />
+
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="headerCurve" clipPathUnits="objectBoundingBox">
+      <path
+        d="M 0,0
+              L 1,0
+              L 1,.9
+              C .65 1, .55 .8, .4 .6
+              C .25 .4, .15 .4, 0 .5
+              Z"
+      />
+    </clipPath>
+  </defs>
+</svg>
+
 <header>
+
+<div>
 
 # Aaron Pettengill
 
 ##
 
-<div id="info">
-
-Cumberland, Maine 04021
-
-[(207)312-7439](tel:2073127439)
-
-[pettengill.aaron@gmail.com](mailto:pettengill.aaron@gmail.com)
-
-[linkedin.com/in/aaron-pettengill-7706846b/](https://www.linkedin.com/in/aaron-pettengill-7706846b/)
-
-[github.com/airjp73](https://www.github.com/airjp73)
-
 </div>
+
+<dl id="info">
+
+<dt>Email</dt>
+<dd>
+  <a href={`mailto:${process.env.EMAIL}`}>{process.env.EMAIL}</a>
+</dd>
+
+<dt>Phone</dt>
+<dd>
+  <a href={`tel:${process.env.PHONE}`}>{process.env.PHONE}</a>
+</dd>
+
+<dt>LinkedIn</dt>
+<dd>
+  [linkedin.com/in/aaron-pettengill-7706846b/](https://www.linkedin.com/in/aaron-pettengill-7706846b/)
+</dd>
+
+<dt>Github</dt>
+<dd>[github.com/airjp73](https://www.github.com/airjp73)</dd>
+
+<dt>Address</dt>
+<dd>{process.env.ADDRESS}</dd>
+
+</dl>
 
 </header>
 
@@ -41,10 +73,11 @@ Cumberland, Maine 04021
 <div className="job">
 ### Amazon Web Services
 
-#### Frontend Engineer II
+#### Frontend Engineer II<span className="date">10/2021 - Present</span>
 
 - Improved page load performance by 25% by introducing best practices for code splitting and lazy loading
 - Fixed nearly 100 accessibility issues and regularly used a screen reader to test
+- Owned the entire implementation of a feature with 14 new screens, including a multi-step form with 20+ fields
 - Mentored 3 interns, 2 new hires, and was instrumental in growing the Iot Core Console team from 1 to 5 engineers.
 - Improved our highest-traffic page, the MQTT Test Client, reducing customer complaints by 90% and transforming it into a reliable tool with regular positive feedback
 
@@ -70,16 +103,14 @@ Cumberland, Maine 04021
 
 #### Junior Software Developer<span className="date">02/2018 - 01/2019</span>
 
-{/* - Fullstack development of an Electronic Health Record (EHR) for Mental Health practices */}
-
 - Implemented a bespoke design system library from scratch
-- Completely eliminated a class of bug reports in all our forms at once by making fundamental architecture improvements to our React & Redux app
 - Had bias for action and created custom tools to improve the developer experience, including a custom VSCode extension and a code generation CLI
+  {/* - Lead a team of 5 engineers and introduced the team to Typescript for the first time */}
 - Lead a team of 5 engineers using Agile processes, took on project management duties, and directly interacted with customers
 - Fixed several longstanding bugs that had stumped the other developers
 - Reduced the average time to complete a new feature by 50% by establishing consistent and solid frontend practices
+- Completely eliminated a class of bug reports in all our forms at once by making fundamental architecture improvements to our React & Redux app
 - Overhauled our frontend testing methodology, reducing the number of regressions that made it to production
-  {/* - Lead a team of 5 engineers and introduced the team to Typescript for the first time */}
 
 </div>
 
@@ -87,8 +118,6 @@ Cumberland, Maine 04021
 ### Bangor Symphony Orchestra
 
 #### First Violin Section<span className="date">01/2012 - 08/2022</span>
-
-- Performed classical orchestral works
 
 </div>
 
@@ -133,30 +162,14 @@ Cumberland, Maine 04021
 
 ### Skills
 
-- React
 - TypeScript
-- Node.js
-- Ruby on Rails
-- HTML
-- CSS
-- Postgres
-  {/* - Redux */}
-- Java
-  {/* - Medical Software */}
-  {/* - Postgres */}
-  {/* - Linear */}
-- AWS
-  {/* - GCP */}
-- Accessibility
-  {/* - Agile */}
-  {/* - WebGL */}
-- Testing
+- React
+- Redux
+- Ruby
+- Rust
+- Figma
 - Mentoring
-  {/* - I18n */}
-  {/* - Github Actions */}
 - Communication
-  {/* - Self-sufficient */}
-  {/* - Mental Health Software */}
 
 </section>
 
@@ -215,20 +228,3 @@ Cumberland, Maine 04021
 </aside>
 
 </main>
-
-<link href="./style.css" rel="stylesheet" />
-
-<svg width="0" height="0">
-  <defs>
-    <clipPath id="headerCurve" clipPathUnits="objectBoundingBox">
-      <path
-        d="M 0,0
-              L 1,0
-              L 1,.9
-              C .65 1, .55 .8, .4 .6
-              C .25 .4, .15 .4, 0 .5
-              Z"
-      />
-    </clipPath>
-  </defs>
-</svg>

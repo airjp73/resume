@@ -48,15 +48,6 @@ const makePdf = async () => {
       '<div id="page-numbers"><span style="margin-right: 32px"><span class="pageNumber"></span> of <span class="totalPages"></span></span></div>',
   });
   await fs.writeFile("./dist/resume.pdf", res);
-  // await page.setViewport({
-  //   width: 664,
-  //   height: 132,
-  //   deviceScaleFactor: 3,
-  // });
-  // await page.screenshot({
-  //   path: "./dist/banner.png",
-  //   omitBackground: true,
-  // });
   await browser.close();
 };
 
