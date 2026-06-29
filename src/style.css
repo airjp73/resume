@@ -34,7 +34,7 @@
   }
 
   header h2 {
-    @apply text-base text-sky-200/80;
+    @apply text-[14px] text-sky-200/80;
   }
 
   header h2 strong {
